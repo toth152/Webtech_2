@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="form-group mb-4">
+      <h3>Employee List <button type="button" class="col-sm-2 btn btn-secondary btn-lg" style="float: right;" routerLink="/menu">Menu</button></h3>
+    <br>
+  </div>
+  <table class="table table-hover">
+    <thead>
+    <tr style="background-color:#37e045">
+      <td>#</td>
+      <td>Name</td>
+      <td>Position</td>
+      <td>ID card</td>
+      <td>Salary</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employee of Employee let i = index">
+      <th scope="row">{{i + 1}}</th>
+      <td>{{ employee.name  }}</td>
+      <td>{{ employee.position }}</td>
+      <td>{{ employee.idCard }}</td>
+      <td>{{ employee.salary }}</td>
+    </tr>
+    </tbody>
+  </table>
+  
+  </div>
+

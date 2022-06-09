@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h3>Login <button type="button" class="col-sm-2 btn btn-secondary btn-lg" style="float: right;" routerLink="/register">Registration</button></h3>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form">
+  
+        <div class="form-group" style="margin-bottom:-1px">
+          <label class="col-md-4">UserName</label>
+          <input type="text" class="form-control" id="uname" placeholder="Type the username..."
+                 formControlName="uname">
+        </div>
+  
+        <div class="form group">
+          <label class="col-md-4">Password</label>
+          <input type="password" class="form-control" placeholder="Type the password..."
+                 formControlName="password"/> 
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4"></label>
+          <button type="submit" class="col-sm-12 btn btn-primary btn-lg">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+
+
+

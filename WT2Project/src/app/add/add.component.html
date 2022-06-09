@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h3>New Employee <button type="button" class="col-sm-2 btn btn-secondary btn-lg" style="float: right;" routerLink="/menu">Menu</button></h3>
+      <form [formGroup]="createForm" (ngSubmit)="onSubmit()" class="form">
+  
+        <div class="form-group" style="margin-bottom:-1px">
+          <label class="col-md-4">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Required /Letters with spaces and can start only with a letter/"
+                 formControlName="name">
+              
+        </div>
+
+        <div class="form-group" style="margin-bottom:-1px">
+          <label class="col-md-4">Position</label>
+          <input type="text" class="form-control" id="position" placeholder="Required"
+                 formControlName="position">
+              
+        </div>
+
+        <div class="form-group" style="margin-bottom:-1px">
+          <label class="col-md-4">ID card</label>
+          <input type="text" class="form-control" id="idCard" placeholder="Required /6 digit and 2 uppercase letter/"
+                 formControlName="idCard">
+              
+        </div>
+  
+        <div class="form group">
+          <label class="col-md-4">Salary</label>
+          <input type="text" class="form-control" placeholder="Required /Only digits/"
+                 formControlName="salary"/>
+              
+          
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4"></label>
+          <button type="submit" class="col-sm-12 btn btn-primary btn-lg">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>

@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h3>New Registration <button type="button" class="col-sm-2 btn btn-secondary btn-lg" style="float: right;" routerLink="/login">Login</button></h3>
+      <form [formGroup]="createForm" (ngSubmit)="onSubmit()" class="form">
+  
+        <div class="form-group" style="margin-bottom:-1px">
+          <label class="col-md-4">UserName</label>
+          <input type="text" class="form-control" id="uname" placeholder="Min. 5 character"
+                 formControlName="uname">
+              
+        </div>
+  
+        <div class="form group">
+          <label class="col-md-4">Password</label>
+          <input type="password" class="form-control" placeholder="Min. 8 character and there must be 1 digit, 1 lowercase and 1 uppercase letter"
+                 formControlName="password"/>
+              
+          
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4"></label>
+          <button type="submit" class="col-sm-12 btn btn-primary btn-lg">Registration</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
